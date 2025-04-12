@@ -16,6 +16,7 @@ import TopPicks from "./(section)/TopPicks";
 import Reserve from "./(section)/Reserve";
 import { useEffect, useState } from "react";
 import ConnectWithUs from "./(section)/ConnectWithUs";
+import Specialities from "./(section)/Specialities";
 
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,15 +37,17 @@ export default function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Navbar position="absolute" />
         <Hero />
-        <AboutUs />
+        {/* <AboutUs /> */}
+        <Specialities />
         <Menu />
         <Special />
         <TopPicks />
         <Reserve />
-        {/* <ConnectWithUs /> */}
         <Reviews />
         <Contact />
+        <ConnectWithUs />
         <Footer />
+
         {/*
         <Experience />
         <PrivateAndGroupDining />

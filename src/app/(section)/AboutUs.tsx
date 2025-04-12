@@ -96,12 +96,12 @@ const AboutUs = ({}) => {
     <section
       className="relative flex h-full w-full items-center justify-center px-3 py-8 md:h-[100vh] md:px-6 md:py-24"
       id="menu"
-      style={{
-        backgroundImage: "url('/camel.svg')",
-        backgroundPosition: "right bottom",
-        backgroundSize: "20%",
-        backgroundRepeat: "no-repeat",
-      }}
+      // style={{
+      //   backgroundImage: "url('/camel.svg')",
+      //   backgroundPosition: "right bottom",
+      //   backgroundSize: "20%",
+      //   backgroundRepeat: "no-repeat",
+      // }}
     >
       <div
         className="z-30 flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-8 md:flex-row"
