@@ -63,12 +63,12 @@ const Reserve = ({}) => {
               experience filled with rich flavours, handcrafted beverages, and a
               welcoming atmosphere.
             </p>
-            {/* <Link href="/table-booking">
-                            <Button className="flex font-playfair items-center justify-center gap-3 font-semibold px-6 py-7 rounded-full text-black bg-white hover:bg-secondary z-30">
-                                Reserve Your Table
-                                <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
-                            </Button>
-                        </Link> */}
+            <Link href="/table-booking">
+              <Button className="z-30 flex items-center justify-center gap-3 rounded-full bg-white px-6 py-7 font-playfair font-semibold text-black hover:bg-secondary">
+                Reserve Your Table
+                <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
