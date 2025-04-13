@@ -58,7 +58,7 @@ const Reserve = ({}) => {
               Table at Zalo Cafe
             </p>
             <p className="font-roboto w-full text-[#F7F4ED] md:w-[500px]">
-              Experience the warmth of Zola’s Cafe, where great coffee meets a
+              Experience the warmth of Zalo’s Cafe, where great coffee meets a
               cozy ambiance. Book your table now and enjoy a delightful dining
               experience filled with rich flavours, handcrafted beverages, and a
               welcoming atmosphere.

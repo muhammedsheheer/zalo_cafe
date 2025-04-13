@@ -38,7 +38,7 @@ const Specialities = ({}) => {
                 </span>
               </p>
               <p className="font-jost w-full font-extralight text-white md:max-w-[400px]">
-                At Zola’s Cafe, we believe in more than just great coffee—we
+                At Zalo’s Cafe, we believe in more than just great coffee—we
                 create experiences. Nestled in the heart, our cafe is a haven
                 for coffee lovers, food enthusiasts, and those looking for a
                 warm, inviting space to relax or work.
