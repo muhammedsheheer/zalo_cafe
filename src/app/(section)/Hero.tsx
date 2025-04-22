@@ -58,7 +58,7 @@ const Hero = ({}) => {
           <video
             className="min-h-full min-w-full object-cover"
             style={{ objectPosition: "center" }}
-            src="/videos/hero.mp4"
+            src="https://d8q1b3smcycac.cloudfront.net/zalos/zalos-cafe-web.mp4"
             autoPlay
             loop
             muted

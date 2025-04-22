@@ -8,6 +8,7 @@ import Sidebar from "./SideBar";
 import { BetaMenuActive } from "@/lib/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import clsx from "clsx";
 
 const Navbar = ({
   position = "static",
@@ -178,11 +179,19 @@ const Navbar = ({
 export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
+  const pathname = usePathname();
+
   return (
     <div className="equalizer-icon rotate">
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-white" : "bg-black")}
+      ></div>
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-white" : "bg-black")}
+      ></div>
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-white" : "bg-black")}
+      ></div>
     </div>
   );
 };
