@@ -2,10 +2,45 @@
 import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = ({}) => {
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const animation = gsap.fromTo(
+        headingRef.current,
+        { opacity: 0, y: 100 },
+        { opacity: 1, y: 0, duration: 1.5, ease: "power3.out", paused: true },
+      );
+
+      ScrollTrigger.create({
+        trigger: headingRef.current,
+        start: "top 80%",
+        end: "bottom top",
+        onEnter: () => {
+          animation.restart();
+        },
+        onEnterBack: () => {
+          animation.restart();
+        },
+        onLeave: () => {
+          animation.pause(0).progress(0);
+        },
+        onLeaveBack: () => {
+          animation.pause(0).progress(0);
+        },
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(".head-container", 2, {
@@ -83,11 +118,21 @@ const Hero = ({}) => {
             </div> */}
         <div className="relative z-50 flex w-full max-w-[1300px] items-center justify-center md:h-[80vh] md:justify-start">
           <div className="head-container flex h-full w-full flex-col items-start justify-center gap-7 px-3 md:w-2/3 md:px-0">
-            <h1 className="head-hero w-full text-center font-italiana text-5xl text-background sm:text-5xl md:text-start md:text-8xl md:leading-[110px]">
+            {/* <h1 className="head-hero w-full text-center font-italiana text-5xl text-background sm:text-5xl md:text-start md:text-8xl md:leading-[110px]">
+              The Love <br />
+              Language of <br />
+              Arabian Hospitality
+            </h1> */}
+
+            <h1
+              ref={headingRef}
+              className="head-hero w-full text-center font-italiana text-5xl text-background sm:text-5xl md:text-start md:text-8xl md:leading-[110px]"
+            >
               The Love <br />
               Language of <br />
               Arabian Hospitality
             </h1>
+
             <div className="flex w-full justify-center gap-4 md:justify-start">
               <Link href="/menu">
                 <Button className="hero-button flex items-center justify-center gap-3 rounded-full bg-white px-6 py-7 font-playfair font-semibold uppercase text-black hover:bg-[#9c5249] hover:text-white">

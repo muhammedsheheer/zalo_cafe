@@ -31,7 +31,7 @@ const Specialities = ({}) => {
                 backgroundRepeat: "repeat",
               }}
             ></div>
-            <div className="flex w-fit flex-col items-start justify-center gap-5">
+            <div className="relative flex w-fit flex-col items-start justify-center gap-5">
               <p className="non-italic font-jost w-full text-3xl font-[300] uppercase text-white">
                 <span className="head-about tracking-[4px] text-white">
                   about us

@@ -7,7 +7,7 @@ const Hero = ({}) => {
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
-              <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-primary lg:text-6xl">
+              <h1 className="font-oswald text-5xl font-semibold text-primary md:leading-[66px] lg:text-6xl">
                 {" "}
                 Welcome to Zalos Cafe
                 <br /> A Symphony of Flavors

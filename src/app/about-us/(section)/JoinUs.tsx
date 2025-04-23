@@ -14,7 +14,7 @@ const JoinUs = ({}) => {
       <div className="absolute left-0 top-0 h-full w-full bg-black/50" />
       <div className="z-20 flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
-          <h1 className="font-oswald max-w-[500px] text-center text-5xl leading-[60px]">
+          <h1 className="font-oswald max-w-[500px] text-center text-5xl md:leading-[60px]">
             Join Us for an
             <br />
             Unforgettable Feast
