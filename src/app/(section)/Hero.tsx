@@ -12,7 +12,7 @@ const Hero = ({}) => {
   const headingRef = useRef(null);
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       const animation = gsap.fromTo(
         headingRef.current,
         { opacity: 0, y: 100 },

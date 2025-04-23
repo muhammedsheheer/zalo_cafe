@@ -107,7 +107,7 @@ const ConnectWithUs = () => {
   const imagesRef = useRef<(HTMLDivElement | null)[]>([]); // This stores the references to the divs.
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       // Animate the "Follow us" text
       gsap.fromTo(
         textRef.current,
